@@ -1,4 +1,3 @@
-/* Estilos Navbar */
 @font-face {
     font-family: "early-gameboy-regular";
     src: url(../fonts/Early\ GameBoy.ttf);
@@ -13,11 +12,37 @@ margin-right: 1rem;
 }
 
 /* Sección Banner */
+.col-md-6{
+    display: flex;
+    align-items: center;
+}
 #banner-imagen img{
     width: 15rem;
 }
 .texto-banner{
     text-align: center;
+}
+.circulo img{
+    width: 17rem;
+    position: absolute;
+    transform: translateY(-6rem);
+    left: -4rem;
+
+}
+#etiqueta2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#etiqueta2 img{
+    width: 6rem;
+    position: absolute;
+
+}
+.etiquetas img{
+    width: 6rem;
+    position: absolute;
+    transform: translateX(15rem);
 }
 #boton-start{
     display: flex;
@@ -26,6 +51,11 @@ margin-right: 1rem;
 }
 #boton-start img{
     width: 12rem;
+    transition: all 0.3s ease-in-out;
+}
+#boton-start img:hover{
+   transform: scale(1.2);
+   
 }
 .texto-banner h2{
     font-family: "early-gameboy-regular";
@@ -61,35 +91,66 @@ li.nav-item a{
    font-family: "early-gameboy-regular";
    color: white !important;
    font-size: 0.9rem;
+   transition: all 0.3s ease-in-out;
 }
+li.nav-item a:hover{
+color: #FFAB03 !important;
+}
+
 
 a#proyectos.nav-link{
     color: #3BB081 !important;
 }
+a#proyectos.nav-link:hover{
+    color: #FFAB03 !important;
+}
 #banner{
     background-color: #17233B ;
+    position: relative;
+}
+.ondas img{
+    width: 100%;
+    bottom: -12rem;
+    position: absolute;
 }
 
+ /* Sección sobre mí */
+ .titulos-seccion{
+    text-align: center;
+    padding-top: 15rem;
+    font-family: "early-gameboy-regular";
+    color: white;
+}
  .sobre-mi{
      background-color: #17233B;
  }
- /* Sección sobre mí */
- .titulos-seccion{
-     text-align: center;
-     padding-top: 4rem;
-     font-family: "early-gameboy-regular";
-     color: white;
+.ondas2 img{
+    position: absolute;
+    width: 100%;
+
 }
-.col-12{
-    display: flex;
-    justify-content: center;
+.etiquetas3 img{
+    width: 6rem;
+    position: absolute;
+    transform: translateX(8rem);
 }
+/* Seccion proyectos */
+
+.titulos-seccion2{
+        text-align: center;
+        padding-top: 6rem;
+        font-family: "early-gameboy-regular";
+        color: white;
+}
+/*  */
+
 .card{
-    margin-top: 4rem;
+    margin-top: 1rem;
     background-color: #2E4063 !important;
     box-shadow:  0px 9px 32px -1px #3BAD7F;
     opacity: 0.3;
     transition: all 0.3s ease-out;
+    margin: auto;
 }
 .card:hover{
     opacity: 1;
@@ -124,7 +185,10 @@ img#foto-tarjeta{
     line-height: 25px;
     font-family: 'Montserrat', sans-serif;
 }
+.card-text span{
 
+    color: #3BAD7F;
+}
 h2.card-tittle{
     font-family: 'Montserrat', sans-serif ;
     text-align: center;
@@ -136,7 +200,6 @@ h2.card-tittle{
     color: #D5DCD9;
 }
 .proyectos{
-    height: 100vh;
     background-color: #17233B;
 }
 .botones{
@@ -148,22 +211,39 @@ h2.card-tittle{
     border-radius: 1rem;
     text-decoration: none;
     color: white;
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem;
+    transition: all 0.3s ease-in-out; 
 }
+.boton-pagina:hover{
+    background-color:#FFBD3A;
+    color: white;
+}
+
 .boton-repo {
     padding:0.8rem;
     background-color: #3BAD7F;
     border-radius: 1rem;
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease-in-out;
+}
+.boton-repo:hover{
+    color: white;
+    background-color:#33D996 ;
 }
 p.card-text{
     margin-bottom: 1.5rem;
 }
 /* Seccion Contacto */
+.titulos-seccion3{
+    text-align: center;
+    font-family: "early-gameboy-regular";
+    color: white;
+}
 .contacto{
-    height: 100vh;
     background-color: #17233B ;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 .formulario{
     text-align: center;
@@ -248,4 +328,147 @@ transition: all 0.3s ease-in-out;
     font-size: 0.8rem;
     color: white;
 }
+/* Media Queries */
+
+@media screen and (max-width:378px){
+    #banner-imagen img{
+        width: 22rem;
+        display: flex;
+        margin: auto;
+    }
+    .texto-banner h2{
+        font-size: 4rem;
+    }
+    .texto-banner h4{
+        font-size: 1.4rem;
+    }
+    .texto-banner h5{
+        font-size: 1rem;
+    }
+    .circulo img{
+        width: 10rem;
+    }
+    .ondas{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    #banner-imagen img{
+        width: 20rem;
+        display: flex;
+        margin: auto;
+    }
+    .texto-banner h2{
+        font-size: 1.8rem;
+    }
+    .texto-banner h4{
+        font-size: 1rem;
+    }
+    .texto-banner h5{
+        font-size: 0.9rem;
+    }
+    .circulo img{
+        width: 10rem;
+    }
+    .ondas{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1199px){
+    #banner-imagen img{
+        width: 18rem;
+    }
+    .texto-banner h2{
+        font-size: 1.5rem;
+    }
+    .texto-banner h4{
+        font-size: 0.9rem;
+    }
+    .texto-banner h5{
+        font-size: 0.8rem;
+    }
+    .circulo img{
+        width: 10rem;
+    }
+    .ondas{
+        display: none;
+    }
+    .col-md-6{
+        display: block;
+    }
+    #row{
+        margin-top: 5em !important;
+    }
+    .card{
+        margin-top: 2rem;
+    }
+    .titulos-seccion{
+        padding-top: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+    .boton-enviar{
+        width: 48%;
+    }
+    .input{
+        width: 87%;
+
+    }
+    textarea.mensaje{
+        width: 87%;
+    }
+    .etiqueta3 img{
+        display: none;
+    }
+    #etiqueta2 img{
+        transform: translateY(-22px);
+    }
+    .etiquetas3 img{
+        display: none;
+    }
+    .card{
+        margin-top: 2rem;
+    }
+    .titulos-seccion{
+        padding-top: 3rem;
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:350px) {
+    #banner-imagen img{
+        width: 15rem;
+        display: flex;
+        margin: auto;
+    }
+    .texto-banner h2{
+        font-size: 1.5rem;
+    }
+    .texto-banner h4{
+        font-size: 0.7rem;
+    }
+    .texto-banner h5{
+        font-size: 0.6rem;
+    }
+    .circulo img{
+        width: 10rem;
+    }
+    .ondas img{
+        top: 41.5rem;
+    }
+    #row{
+        margin-top: 2em !important;
+    }
+    .titulos-seccion{
+        padding-top: 11rem;
+    }
+    
+}
+
 
