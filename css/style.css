@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "early-gameboy-regular";
     src: url(../fonts/Early\ GameBoy.ttf);
@@ -9,6 +10,62 @@
 .navbar-expand-lg .navbar-collapse {
 justify-content: flex-end;
 margin-right: 1rem;
+}
+/* Botón volver arriba */
+.boton-arriba-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+
+}
+.volver-arriba{
+    width: 0rem;
+    height: 0rem;
+    background-color: #3BB081;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    transform: translate(-50%,50%);
+}
+.volver-arriba i{
+    position: absolute;
+    font-size: 1rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+.show{
+    z-index: 10;
+    transform: translateX(125px);
+}
+.show .volver-arriba{
+    animation: popop .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%,-50%) scale(1);
+}
+@keyframes popop {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 2rem;
+        height: 2em;
+    }
+    100%{
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 /* Sección Banner */
@@ -22,13 +79,26 @@ margin-right: 1rem;
 .texto-banner{
     text-align: center;
 }
-.circulo img{
-    width: 17rem;
+.svg-c{
+    width: 14rem;
     position: absolute;
-    transform: translateY(-6rem);
+    transform: translateY(-13rem);
     left: -4rem;
 
 }
+.circulo{
+    stroke:#3BAD7F;
+    stroke-width:11;
+    stroke-dasharray:500;
+    stroke-dashoffset:500;
+    animation: animacion 4s ease-in-out alternate infinite;
+  }
+  @keyframes animacion{
+    to{
+      stroke-dashoffset:0;
+      stroke-dasharray:0;
+    }
+  }
 #etiqueta2{
     width: 100%;
     display: flex;
@@ -114,6 +184,7 @@ a#proyectos.nav-link:hover{
     position: absolute;
 }
 
+
  /* Sección sobre mí */
  .titulos-seccion{
     text-align: center;
@@ -142,7 +213,6 @@ a#proyectos.nav-link:hover{
         font-family: "early-gameboy-regular";
         color: white;
 }
-/*  */
 
 .card{
     margin-top: 1rem;
@@ -328,6 +398,13 @@ transition: all 0.3s ease-in-out;
     font-size: 0.8rem;
     color: white;
 }
+.texto p{
+    font-size: 0.7rem;
+}
+.navbar>.container-fluid{
+    justify-content: flex-end !important;
+}
+
 /* Media Queries */
 
 @media screen and (max-width:378px){
@@ -345,8 +422,9 @@ transition: all 0.3s ease-in-out;
     .texto-banner h5{
         font-size: 1rem;
     }
-    .circulo img{
+    .svg-c{
         width: 10rem;
+        transform: translateY(-15rem);
     }
     .ondas{
         display: none;
@@ -369,12 +447,17 @@ transition: all 0.3s ease-in-out;
     .texto-banner h5{
         font-size: 0.9rem;
     }
-    .circulo img{
+    .svg-c{
         width: 10rem;
+        transform: translateY(-15rem);
     }
     .ondas{
         display: none;
     }
+    .card:hover{
+        transform: scale(0.9);
+    }
+
 }
 
 @media screen and (max-width:1199px){
@@ -390,8 +473,9 @@ transition: all 0.3s ease-in-out;
     .texto-banner h5{
         font-size: 0.8rem;
     }
-    .circulo img{
+    .svg-c{
         width: 10rem;
+        transform: translateY(-16rem);
     }
     .ondas{
         display: none;
@@ -408,6 +492,10 @@ transition: all 0.3s ease-in-out;
     .titulos-seccion{
         padding-top: 3rem;
     }
+    #habilidades p{
+        font-size: 0.7rem;
+    }
+    
 
 }
 
@@ -438,6 +526,10 @@ transition: all 0.3s ease-in-out;
     .titulos-seccion{
         padding-top: 3rem;
     }
+    #banner-imagen img{
+        display: flex;
+        margin: auto;
+    }
 }
 
 
@@ -456,8 +548,9 @@ transition: all 0.3s ease-in-out;
     .texto-banner h5{
         font-size: 0.6rem;
     }
-    .circulo img{
+    .svg-c{
         width: 10rem;
+        transform: translateY(-16rem);
     }
     .ondas img{
         top: 41.5rem;
@@ -468,7 +561,15 @@ transition: all 0.3s ease-in-out;
     .titulos-seccion{
         padding-top: 11rem;
     }
-    
+    .card:hover{
+        transform: scale(0.9);
+    }
+    .etiquetas img{
+        width: 4rem;
+    }
+    #habilidades p{
+        font-size: 0.7rem;
+    }
 }
 
 
