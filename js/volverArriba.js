@@ -4,6 +4,5 @@ window.onscroll = function(){
     
     }else{
         document.querySelector('.boton-arriba-contenedor').classList.remove('show')
-
     }
 }
