@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "early-gameboy-regular";
+    src: url(../fonts/Early\ GameBoy.ttf);
+}
+.color{
+    background-color: #17233B;
+    
+}
+.texto-exito h2{
+    color: white;
+    font-family: "early-gameboy-regular";
+    margin-bottom: 2rem;
+}
+.boton-volver{
+    padding: 1rem;
+    background-color: #3BB081;
+    border-radius: 1rem;
+    max-width: 30%;
+    margin: auto;
+}
+.texto-exito a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.texto-exito a:hover{
+    color:#17233B
+}
+@media screen and (max-width:800px){
+    .texto-exito h2{
+        font-size: 0.7rem;
+    }
+}
+
+

@@ -2,7 +2,6 @@
     font-family: "early-gameboy-regular";
     src: url(../fonts/Early\ GameBoy.ttf);
 }
-
 .me-auto{
     margin: 0;
 }
@@ -472,6 +471,11 @@ transform: rotate(-45deg) translate(-8px, 6px);
 .mobile-nav a:hover{
     background-color: #33D996 ;
 }
+/* 2da Pantalla */
+div.texto-exito{
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media screen and (max-width:378px){
