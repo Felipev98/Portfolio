@@ -246,9 +246,7 @@ a#proyectos.nav-link:hover{
 img#foto-tarjeta{
     width: 8.5rem;
 }
-#card-proyectos{
-    margin-top:20rem;
-}
+
 .card-title{
     text-align: center;
     font-family: "early-gameboy-regular";
