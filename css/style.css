@@ -202,6 +202,9 @@ a#proyectos.nav-link:hover{
     font-family: "early-gameboy-regular";
     color: white;
 }
+.card{
+    margin-top: 2rem !important;
+}
  .sobre-mi{
      background-color: #17233B;
  }
@@ -211,10 +214,10 @@ a#proyectos.nav-link:hover{
     position: absolute;
     transform: translateX(8rem);
 }
+
 /* Seccion proyectos */
-.card{
-    margin-top: 8rem;
-}
+
+
 .titulos-seccion2{
         text-align: center;
         padding-top: 6rem;
