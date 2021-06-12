@@ -284,13 +284,15 @@ h2.card-tittle{
 .botones{
     width: 100%;
 }
+.botoenes{
+    width: 100%;
+}
 .boton-pagina{
     padding:0.8rem;
     background-color: #FFAB03;
     border-radius: 1rem;
     text-decoration: none;
     color: white;
-    margin-top: 0.5rem;
     transition: all 0.3s ease-in-out; 
 }
 .boton-pagina:hover{
@@ -305,6 +307,7 @@ h2.card-tittle{
     text-decoration: none;
     color: white;
     transition: all 0.3s ease-in-out;
+
 }
 .boton-repo:hover{
     color: white;
