@@ -229,17 +229,72 @@ a#proyectos.nav-link:hover{
     margin-top: 1rem;
     background-color: #2E4063 !important;
     box-shadow:  0px 9px 32px -1px #3BAD7F;
-    opacity: 0.3;
     transition: all 0.3s ease-out;
     margin: auto;
 }
 .card:hover{
-    opacity: 1;
-    transform: scale(1.1);
     box-shadow:  0px 9px 50px -1px #3BAD7F;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 0.8rem;
+    color: #ffff;
+    font-size: 1rem;
+    padding: 1rem;
 
 }
+[data-tab-content] {
+    display: none;
+  }
+.tab {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #3BAD7F;
+    width: 13rem;
+    color: white;
+    text-align: center;
+    border-radius: 1.4rem;
+  }
+  .active[data-tab-content] {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  .tab.active {
+    background-color: #FFBD3A;
+  }
+  #boton-uiuix{
+text-align: center;
+  }
+.card-text-{
+    text-align: justify;
+    padding-bottom: 2rem;
+    color: white;
+    line-height: 25px;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+}
+.card-bodys {
+    flex: 1 1 auto;
+    padding: 2rem;
+    background-color: #ffff;
+    border-radius: 0.8rem;
+    height: 19rem;
+}
 
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .imagen-presentacion{
     width: 100%;
     display: flex;
@@ -254,11 +309,23 @@ img#foto-tarjeta{
     text-align: center;
     font-family: "early-gameboy-regular";
     font-size: 1.3rem;
-    color: white;    
+    color: #17233B;    
+}
+#titulo-card{
+    color: #17233B;
+    font-size: 1.7rem;
 }
 .card-title span{
  color: #FFAB03; 
 }
+.card-body{
+    padding: 2rem 2rem;
+    background: #ffff;
+}
+.card-body:first-child{
+    border-radius: 0.8rem;
+}
+
 .card-text{
     text-align: justify;
     border-bottom: 1px solid #FFAB03;
@@ -492,6 +559,58 @@ div.texto-exito{
 }
 
 /* Media Queries */
+.info-programacion{
+    font-size: 1.3rem;
+    color: #BCB5B5;
+    padding-top: 4.5rem;
+}
+.info-programacion2{
+    font-size: 1.8rem;
+    color: #FFAB03; 
+    font-family: "early-gameboy-regular";
+}
+.card-proyectos{
+    background-color: #17233B ;
+}
+.card-t-2{
+    color: #ffff;
+}
+#texto-front{
+    color: black;
+}
+.imagen-felipe{
+    padding-left: 5rem;
+}
+.skills {
+    color: black !important;
+}
+#habilidades{
+    text-align: center;
+}
+.texto-experiencia{
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    color: black !important;
+}
+.card-text-:nth-child(2){
+    padding-bottom: 0rem;
+}
+.card-text-:nth-child(3){
+    padding-bottom: 0rem;
+}
+.border--{
+    border-left:  1px solid #FFAB03;
+    height: 15rem;
+
+}
+.card-number{
+    padding-left: 2rem;
+}
+.icon-svg{
+    position: relative;
+    left: -1rem;
+    top: 2rem;
+}
 
 @media screen and (max-width:378px){
     #banner-imagen img{
