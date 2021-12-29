@@ -17,13 +17,14 @@
 <body>
     <header id="banner">
       <div class="boton-arriba-contenedor">
-        <div class="volver-arriba">
-          <a href="#"><i class="bi bi-chevron-up"></i>
-          </a>
+       <a href="#"><div class="volver-arriba">
+        <i class="bi bi-chevron-up"></i>
+       </div></a> 
         </div>
       </div>
       <nav class="mobile-nav">
         <a href="#sobre-mi">About me</a>
+        <a href="#experience">Experience</a>
         <a href="#proyecto">Projects</a>
         <a href="#contacto">Contact</a>
 
@@ -39,7 +40,7 @@
                     <a class="nav-link active" aria-current="page" href="#sobre-mi">About me</a>
                   </li>
                     <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Experiencia</a>
+                    <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="proyectos" href="#proyecto">Projects</a>
@@ -53,10 +54,8 @@
             </div>
             <div class="hamburguer">
               <div class="bar">
-
               </div>
             </div>
-          
           </nav>
           <svg class="svg-c" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="514" height="452" viewBox="0 0 514 452">
             <defs>
@@ -113,13 +112,13 @@
                 <p>PRINT(SELF.ABOUTTO)</p>
               </div>
               <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6">
                   <div class="imagen-felipe">
                     <img src="./assets/Git.png" alt="Felipe.png">
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="card-body">
+                <div class="col-xl-6 col-md-6" id="card-aboutmee">
+                  <div class="card-body" id="card-aboutme">
                     <h5 class="card-title" id="titulo-card"> FELIPE VARGAS</h5>
                     <h5 class="card-title"> <span>FRONT-END</span> DEVELOPER</h5>
                     <p class="card-text" id="texto-front">I am passionate about new technologies and challenges, therefore I have set as a professional goal to be part of a team which will help me deliver quality software  through the use of good practices in programming.</p>
@@ -142,11 +141,12 @@
                           <p class="skills">Python</p>
                         </div>
                         <div class="col-4">
-                          <p class="skills">Adobe XD</p>
+                          <p class="skills">Git</p>
                         </div>
                         <div class="col-4">
                           <p class="skills">Firebase</p>
                         </div>
+                        
                       </div>
                       </div>
                     </div>
@@ -162,10 +162,10 @@
           <img src="./assets/Etiquetas.png" alt="etiquetas">
         </div>
     </section>
-    <section class="sobre-mi" id="sobre-mi">
+    <section class="sobre-mi" id="experience">
       
       <div class="container">
-        <h2 class="titulos-seccion">About me</h2>
+        <h2 class="titulos-seccion">EXPERIENCE</h2>
         <div class="etiquetas3">
           <img src="./assets/Etiquetas.png" alt="etiquetas">
         </div>
@@ -173,10 +173,10 @@
               <p>//  Show wherever Felipe has or not some kind of experiences </p>
             </div>
             <div class="info-programacion2">
-              <p>let hasExperience:Bool?</p>
+              <p> <span id="let">let</span>  hasExperience:Bool?</p>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-xl-6">
                 <div class="card-bodys">
                   <div class="border--">
                     <div class="icon-svg">
@@ -188,7 +188,7 @@
                   </div>              
                   </div>
               </div>
-              <div class="col-6">
+              <div class="col-xl-6">
                 <div class="card-bodys">
                   <div class="border--">
                     <div class="icon-svg">
@@ -363,7 +363,7 @@
                                 <h5 class="card-title card-t-2">RECISTORE</h5>
                                 <p class="card-text">App which allows users to register and access a menu where you are able to create, read, update and delete. <br> <span>Technologies:</span> Vue + Firebase</p>
                                 <div class="botones" id="boton-uiuix">
-                                <a href="https://github.com/Felipev98/ObjetivosApp" style="width: 100%;" class="boton-repo">See Repository</a>
+                                <a href="https://www.behance.net/gallery/133509083/RecisStore"  class="boton-repo">See Repository</a>
                                 </div>                             
                               </div>
                             </div>
@@ -374,6 +374,21 @@
         </div>
         <div id="etiqueta2">
           <img src="./assets/Etiquetas.png" alt="etiquetas">
+        </div>
+        <div class="marquee">
+          <div class="marqueeScroll">
+         <div class="imagenes-cinta">
+          <img src="./assets/html.png" alt="">
+          <img src="./assets/css.png" alt="">
+          <img src="./assets/JavaScript.png" alt="">
+          <img src="./assets/Vue.png" alt="">
+          <img src="./assets/adobeXD.png" alt="">
+          <img src="./assets/django.png" alt="">
+          <img src="./assets/logo-git.png" alt="">
+          <img src="./assets/Python.png" alt="">
+         </div>
+          </div>
+        
         </div>
     </section>
     <section class="contacto" id="contacto">

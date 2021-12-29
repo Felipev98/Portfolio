@@ -5,7 +5,10 @@
 .me-auto{
     margin: 0;
 }
-
+body,html{
+    overflow-x: hidden !important;
+    position: relative;
+}
 .navbar-expand-lg .navbar-collapse {
 justify-content: flex-end;
 margin-right: 1rem;
@@ -244,6 +247,7 @@ a#proyectos.nav-link:hover{
     color: #ffff;
     font-size: 1rem;
     padding: 1rem;
+    flex-wrap: wrap;
 
 }
 [data-tab-content] {
@@ -611,7 +615,38 @@ div.texto-exito{
     left: -1rem;
     top: 2rem;
 }
-
+.marquee {
+    height: 16rem;
+    width: 100%;
+    /* max-width: 100%; */
+    overflow: hidden;
+    line-height: 6rem;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    overflow-x: hidden;
+    /* left: -10rem;  */
+    transition: all 0.3s ease-in-out;
+  }
+  .marqueeScroll, .marqueeScroll2 {
+    height: 20px;
+    white-space: nowrap;
+    font-size: 90px;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+    position: absolute;
+  }
+  @keyframes marquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+  .imagenes-cinta img{
+    width: 14rem;
+    height: auto;
+  }
+  #let{
+      color: #3BAD7F;
+  }
 @media screen and (max-width:378px){
     #banner-imagen img{
         width: 22rem;
@@ -644,7 +679,7 @@ div.texto-exito{
         display: none;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     #banner-imagen img{
         width: 20rem;
         display: flex;
@@ -669,7 +704,45 @@ div.texto-exito{
     .card:hover{
         transform: scale(0.9);
     }
+    .card-bodys{
+        height: 22rem;
+    }
+    .tab{
+        margin-top: 1rem;
+    }
+    .imagen-felipe{
+        padding-left: 0rem;
+        text-align: center;
+    }
 
+.imagen-felipe img{
+    width: 13rem;
+}
+/* .card-bodys{
+    margin-top: 2rem;
+} */
+.imagenes-cinta img{
+    width: 11rem;
+    padding-top: 2rem;
+}
+.card-bodys{
+    margin-top: 2rem;
+}
+.imagen-felipe{
+    padding-bottom: 2rem;
+}
+#titulo-card{
+    font-size: 1.5rem;
+}
+.card-title{
+    font-size: 1rem;
+}
+.info-programacion2{
+    font-size: 1.1rem;
+}
+.info-programacion{
+    font-size: 0.9rem;
+}
 }
 @media screen and (min-width:450px) and (max-width:1199px){
     .hamburguer{
@@ -750,7 +823,19 @@ div.texto-exito{
     }
 
 }
-
+@media screen and (min-width:701px) and (max-width:1025px){
+    #card-aboutmee{
+        margin: auto;
+    }
+    .imagen-felipe{
+        padding-left: 0rem;
+        text-align: center
+    }
+    .imagen-felipe img{
+        width:12rem;
+        padding-bottom: 2rem;
+    }
+}
 @media screen and (min-width:200px) and (max-width:370px) {
     #banner-imagen img{
         width: 15rem;
@@ -793,5 +878,24 @@ div.texto-exito{
     }
     img #foto-tarjet{
         width: 1rem !important;
+    }
+    .info-programacion2 p{
+        font-size: 0.8rem;
+    }
+    .info-programacion{
+        font-size: 0.6rem;
+    }
+    #titulo-card{
+        font-size: 1.3rem;
+    }
+    .card-title{
+        font-size: 1.2rem;
+    }
+    #texto-front{
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    .card-bodys{
+        height: 24rem;
     }
 }
