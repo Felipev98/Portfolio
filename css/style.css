@@ -331,7 +331,7 @@ img#foto-tarjeta{
 }
 
 .card-text{
-    text-align: justify;
+    text-align: center;
     border-bottom: 1px solid #FFAB03;
     padding-bottom: 2rem;
     color: white;
@@ -834,6 +834,12 @@ div.texto-exito{
     .imagen-felipe img{
         width:12rem;
         padding-bottom: 2rem;
+    }
+    .card-bodys{
+        margin-top: 2rem;
+    }
+    .tab{
+        margin-top: 1rem;
     }
 }
 @media screen and (min-width:200px) and (max-width:370px) {
