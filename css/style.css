@@ -825,7 +825,7 @@ div.texto-exito{
         text-align: center;
     }
     .card-title{
-        text-align: center;
+        text-align: center !important;
     }
 
 }
