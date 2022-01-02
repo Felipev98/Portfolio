@@ -331,7 +331,7 @@ img#foto-tarjeta{
 }
 
 .card-text{
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #FFAB03;
     padding-bottom: 2rem;
     color: white;
@@ -820,6 +820,9 @@ div.texto-exito{
     #banner-imagen img{
         display: flex;
         margin: auto;
+    }
+    .card-text{
+        text-align: center;
     }
 
 }
