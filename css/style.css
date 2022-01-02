@@ -824,6 +824,9 @@ div.texto-exito{
     .card-text{
         text-align: center;
     }
+    .card-title{
+        text-align: center;
+    }
 
 }
 @media screen and (min-width:701px) and (max-width:1025px){
